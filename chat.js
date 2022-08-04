@@ -65,3 +65,4 @@ websocket.onmessage = (event) => {
     allMsgs += "\n"+event.data
     messages.innerText = allMsgs;
     chatInterface.scrollIntoView(false);
+}
