@@ -28,7 +28,7 @@ let chatBox = document.getElementById("chat-box");
 let messages = document.getElementById("messages");
 let sendButton = document.getElementById("send-button");
 
-let chatInterface = document.getElementById("chat-interface");
+let chatInterface = document.getElementById("chatinterface");
 
 nameBox.addEventListener("keypress", (event)=>{
     if (event.key === "Enter") {
