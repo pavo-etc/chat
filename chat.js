@@ -7,6 +7,7 @@ let allMsgs = "";
 
 function submitName(name) {
     username = name;
+    chatBox.placeholder = "Send message as " + username;
     websocket.send("New chatroom user: " + username);
     document.getElementById("enterroom").classList.add("hidden");
     document.getElementById("chatinterface").classList.remove("hidden");
@@ -15,7 +16,7 @@ function submitName(name) {
 
 function sendMsg() {
     if (chatBox.value !== "") {
-        websocket.send(username + ": " + chatBox.value);
+        websocket.send(`<${username}> + " " + chatBox.value`);
         chatBox.value = "";
     }
 }
@@ -26,7 +27,6 @@ let enterButton = document.getElementById("enter-button");
 let chatBox = document.getElementById("chat-box");
 let messages = document.getElementById("messages");
 let sendButton = document.getElementById("send-button");
-
 
 nameBox.addEventListener("keypress", (event)=>{
     if (event.key === "Enter") {

@@ -1,8 +1,20 @@
-.chatroom {
+#chatroom {
     max-width: 40rem;
+    max-height: 70vh;
+    overflow-x: scroll;
     margin: auto;
-    border: 1px solid var(--purple);
+    outline: var(--purple) solid;
     padding: 1rem;
+    border-radius: 8px;
+}
+
+#chat-box {
+    width: 100%;
+    display: inline-block;
+}
+
+#send-button {
+    display: inline-block;
 }
 
 .hidden {
