@@ -1,7 +1,7 @@
 .chatroom {
     max-width: 40rem;
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid var(--purple);
 }
 
 .hidden {

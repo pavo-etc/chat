@@ -1,5 +1,5 @@
 
-let websocket = new WebSocket("ws://cits3200api.zachmanson.com:8765")
+let websocket = new WebSocket("wss://cits3200api.zachmanson.com:8765")
 
 let username = "NAMELESS"
 let allMsgs = "";
