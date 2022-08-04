@@ -9,11 +9,6 @@
     font-family: monospace;
 }
 
-#chat-interface {
-    display: flex;
-    flex-direction: row;
-}
-
 #chat-box {
     flex: 1 1 auto;
 }
