@@ -6,6 +6,7 @@
     outline: var(--purple) solid;
     padding: 1rem;
     border-radius: 8px;
+    font-family: monospace;
 }
 
 #chat-box {
