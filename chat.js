@@ -28,6 +28,8 @@ let chatBox = document.getElementById("chat-box");
 let messages = document.getElementById("messages");
 let sendButton = document.getElementById("send-button");
 
+let chatInterface = document.getElementById("chat-interface");
+
 nameBox.addEventListener("keypress", (event)=>{
     if (event.key === "Enter") {
         event.preventDefault();
@@ -62,4 +64,4 @@ websocket.onmessage = (event) => {
     console.log("Received: ",event.data);
     allMsgs += "\n"+event.data
     messages.innerText = allMsgs;
-}
+    chatInterface.scrollIntoView(false);
