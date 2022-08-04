@@ -1,7 +1,7 @@
 #chatroom {
     max-width: 40rem;
     max-height: 70vh;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin: auto;
     outline: var(--purple) solid;
     padding: 1rem;
@@ -9,15 +9,19 @@
     font-family: monospace;
 }
 
+#chat-interface {
+    display: flex;
+    flex-direction: row;
+}
+
 #chat-box {
-    width: 100%;
-    display: inline-block;
+    flex: 1 1 auto;
 }
 
 #send-button {
-    display: inline-block;
+    flex: 0 1 auto;
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }

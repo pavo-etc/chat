@@ -16,7 +16,7 @@ function submitName(name) {
 
 function sendMsg() {
     if (chatBox.value !== "") {
-        websocket.send(`<${username}> + " " + chatBox.value`);
+        websocket.send(`<${username}> ${chatBox.value}`);
         chatBox.value = "";
     }
 }
