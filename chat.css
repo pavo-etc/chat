@@ -1,7 +1,7 @@
 #chatroom {
     max-width: 40rem;
     max-height: 70vh;
-    overflow-x: scroll;
+    overflow-y: scroll;
     margin: auto;
     outline: var(--purple) solid;
     padding: 1rem;
