@@ -1,9 +1,11 @@
-
-let websocket = new WebSocket("wss://cits3200api.zachmanson.com:8765")
+connect();
 
 let username = "NAMELESS"
 let allMsgs = "";
 
+function connect() {
+    var websocket = new WebSocket("wss://cits3200api.zachmanson.com:8765")
+}
 
 function submitName(name) {
     username = name;
@@ -66,3 +68,10 @@ websocket.onmessage = (event) => {
     messages.innerText = allMsgs;
     chatInterface.scrollIntoView(false);
 }
+
+websocket.onclose = function(e) {
+    console.log('Socket is closed. Reconnect will be attempted in 1 second.', e.reason);
+    setTimeout(function() {
+      connect();
+    }, 1000);
+};
