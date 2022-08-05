@@ -1,10 +1,10 @@
-connect();
+var websocket = new WebSocket("wss://cits3200api.zachmanson.com:8765")
 
 let username = "NAMELESS"
 let allMsgs = "";
 
 function connect() {
-    var websocket = new WebSocket("wss://cits3200api.zachmanson.com:8765")
+    websocket = new WebSocket("wss://cits3200api.zachmanson.com:8765")
 }
 
 function submitName(name) {
